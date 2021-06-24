@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'mainapp',
     'authapp',
     'basketapp',
-    'adminapp'
+    'adminapp',
+    'social_django'
 ]
 
 MIDDLEWARE = [
@@ -69,7 +70,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'mainapp.context_processors.basket'
+                'mainapp.context_processors.basket',
+                #'social_django.context_processors.backends',
             ],
         },
     },
@@ -141,8 +143,8 @@ LOGIN_URL = '/auth/login/'
 
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 25
-EMAIL_HOST_USER = 'fgrigoriy1@gmail.com'
-EMAIL_HOST_PASSWORD = '123456'
+EMAIL_HOST_USER = 'django@gb.local'
+EMAIL_HOST_PASSWORD = 'geekbrains'
 EMAIL_USE_SSL = False
 
 #EMAIL_HOST = os.getenv('EMAIL_HOST')
@@ -157,4 +159,15 @@ EMAIL_USE_SSL = False
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = 'tmp/emails/'
 
-DOMAIN_NAME ='http://localhost:8088'
+DOMAIN_NAME ='http://localhost:8000'
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'social_core.backends.vk.VKOAuth2',
+)
+
+SOCIAL_AUTH_VK_OAUTH2_KEY = '7887909'
+SOCIAL_AUTH_VK_OAUTH2_SECRET = 'ToT7WU7CRUTRaNHP47ix'
+
+#7887909
+#ToT7WU7CRUTRaNHP47ix

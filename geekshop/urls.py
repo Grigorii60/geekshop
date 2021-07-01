@@ -2,6 +2,7 @@
 from django.conf.urls import include
 from django.contrib import admin
 import mainapp.views as mainapp
+import ordersapp.views as ordersapp
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -16,6 +17,7 @@ urlpatterns = [
     re_path(r'^basket/', include('basketapp.urls', namespace='basket')),
     path('', include('social_django.urls', namespace='social')),
     re_path(r'^admin/', include('adminapp.urls', namespace='admin')),
+    path('order/', include('ordersapp.urls', namespace='order')),
 ]
 
 if settings.DEBUG:

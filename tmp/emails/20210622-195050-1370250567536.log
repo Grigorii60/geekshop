@@ -1,0 +1,11 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Account verify
+From: fgrigoriy1@gmail.com
+To: fgr@yandex.ru
+Date: Tue, 22 Jun 2021 14:50:50 -0000
+Message-ID: <162437345071.12540.9954601057471074075@DESKTOP-CBE8N4O>
+
+Your link for account activation: http://localhost:8088/auth/verify/fgr@yandex.ru/7ee6cd4e8e907a06646ef55c8c7e728fcc117952/
+-------------------------------------------------------------------------------

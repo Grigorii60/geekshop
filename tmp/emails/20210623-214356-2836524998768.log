@@ -1,0 +1,11 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Account verify
+From: django@gb.local
+To: fgrigo@yandex.ru
+Date: Wed, 23 Jun 2021 16:43:56 -0000
+Message-ID: <162446663609.12436.65192670070123229@DESKTOP-CBE8N4O>
+
+Your link for account activation: http://localhost:8088/auth/verify/fgrigo@yandex.ru/fb73357ddb2abe4b653473665670ada67ac150ac/
+-------------------------------------------------------------------------------

@@ -49,7 +49,7 @@ def main(request):
 def products(request, pk=None, page=1):   
     title = 'продукты'
     links_menu = ProductCategory.objects.filter(is_active=True)
-    basket = get_basket(request.user)
+    #basket = get_basket(request.user)
            
     if pk:
         if pk == '0':
